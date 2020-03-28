@@ -10,16 +10,17 @@ public:
 	Polinom(const Polinom& tmp);
 	~Polinom();
 	Polinom& operator=(const Polinom& tmp);
-	void AddMonomToPolinom(Monom tmp);
-	void DelMonom(Monom tmp);
-	Polinom operator+(const Polinom tmp);
-	Polinom operator-(const Polinom tmp);
-	Polinom operator*(const Polinom tmp);
-	Polinom operator*(const double k);
-	std::string PolinomToString();
-	int get_count();
-	int get_max_deg();
-	void set_count(int _count);
-	void set_max_deg(int _max_deg);
+
+	void AddMonomToPolinom(Monom tmp);//добавить моном в полином
+	void DelMonom(Monom tmp);//удалить моном из полинома
+	Polinom operator+(const Polinom tmp);//сложение двух полиномов
+	Polinom operator-(const Polinom tmp);//вычитание двух полиномов
+	Polinom operator*(const Polinom tmp);//умножение двух полиномов
+	Polinom operator*(const double k);//умножение полинома на число
+	std::string PolinomToString();//преобразование полинома в строку
+	int get_count();//получить count
+	int get_max_deg();//получить максимальную степень
+	void set_count(int _count);//поменять count
+	void set_max_deg(int _max_deg);//изменить максимальную степень
 };
 

@@ -83,6 +83,8 @@ namespace Project1Forms {
 	private: System::Windows::Forms::Button^ Clear;
 	private: System::Windows::Forms::TextBox^ P1build;
 	private: System::Windows::Forms::TextBox^ P2build;
+	private: System::Windows::Forms::Label^ label7;
+	private: System::Windows::Forms::Label^ label8;
 
 
 
@@ -133,6 +135,8 @@ namespace Project1Forms {
 			this->Clear = (gcnew System::Windows::Forms::Button());
 			this->P1build = (gcnew System::Windows::Forms::TextBox());
 			this->P2build = (gcnew System::Windows::Forms::TextBox());
+			this->label7 = (gcnew System::Windows::Forms::Label());
+			this->label8 = (gcnew System::Windows::Forms::Label());
 			this->SuspendLayout();
 			// 
 			// label4
@@ -140,7 +144,7 @@ namespace Project1Forms {
 			this->label4->AutoSize = true;
 			this->label4->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Italic, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->label4->Location = System::Drawing::Point(12, 21);
+			this->label4->Location = System::Drawing::Point(-2, 28);
 			this->label4->Name = L"label4";
 			this->label4->Size = System::Drawing::Size(119, 25);
 			this->label4->TabIndex = 13;
@@ -149,7 +153,7 @@ namespace Project1Forms {
 			// Max_degree
 			// 
 			this->Max_degree->BorderStyle = System::Windows::Forms::BorderStyle::FixedSingle;
-			this->Max_degree->Location = System::Drawing::Point(137, 12);
+			this->Max_degree->Location = System::Drawing::Point(123, 12);
 			this->Max_degree->Multiline = true;
 			this->Max_degree->Name = L"Max_degree";
 			this->Max_degree->ScrollBars = System::Windows::Forms::ScrollBars::Both;
@@ -162,7 +166,7 @@ namespace Project1Forms {
 			this->label5->AutoSize = true;
 			this->label5->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Italic, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->label5->Location = System::Drawing::Point(360, 12);
+			this->label5->Location = System::Drawing::Point(319, 12);
 			this->label5->Name = L"label5";
 			this->label5->Size = System::Drawing::Size(65, 25);
 			this->label5->TabIndex = 15;
@@ -171,7 +175,7 @@ namespace Project1Forms {
 			// Count
 			// 
 			this->Count->BorderStyle = System::Windows::Forms::BorderStyle::FixedSingle;
-			this->Count->Location = System::Drawing::Point(431, 12);
+			this->Count->Location = System::Drawing::Point(390, 12);
 			this->Count->Multiline = true;
 			this->Count->Name = L"Count";
 			this->Count->ScrollBars = System::Windows::Forms::ScrollBars::Both;
@@ -183,7 +187,7 @@ namespace Project1Forms {
 			// 
 			this->Block->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Italic, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->Block->Location = System::Drawing::Point(631, 12);
+			this->Block->Location = System::Drawing::Point(586, 12);
 			this->Block->Name = L"Block";
 			this->Block->Size = System::Drawing::Size(174, 56);
 			this->Block->TabIndex = 25;
@@ -196,7 +200,7 @@ namespace Project1Forms {
 			this->label1->AutoSize = true;
 			this->label1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Italic, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->label1->Location = System::Drawing::Point(12, 94);
+			this->label1->Location = System::Drawing::Point(-2, 94);
 			this->label1->Name = L"label1";
 			this->label1->Size = System::Drawing::Size(93, 25);
 			this->label1->TabIndex = 26;
@@ -207,7 +211,7 @@ namespace Project1Forms {
 			this->label2->AutoSize = true;
 			this->label2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Italic, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->label2->Location = System::Drawing::Point(22, 308);
+			this->label2->Location = System::Drawing::Point(-2, 177);
 			this->label2->Name = L"label2";
 			this->label2->Size = System::Drawing::Size(93, 25);
 			this->label2->TabIndex = 27;
@@ -216,22 +220,22 @@ namespace Project1Forms {
 			// Pol1
 			// 
 			this->Pol1->BorderStyle = System::Windows::Forms::BorderStyle::FixedSingle;
-			this->Pol1->Location = System::Drawing::Point(137, 94);
+			this->Pol1->Location = System::Drawing::Point(123, 94);
 			this->Pol1->Multiline = true;
 			this->Pol1->Name = L"Pol1";
 			this->Pol1->ScrollBars = System::Windows::Forms::ScrollBars::Both;
-			this->Pol1->Size = System::Drawing::Size(779, 68);
+			this->Pol1->Size = System::Drawing::Size(649, 52);
 			this->Pol1->TabIndex = 28;
 			this->Pol1->TextChanged += gcnew System::EventHandler(this, &MyForm::Pol1_TextChanged);
 			// 
 			// Pol2
 			// 
 			this->Pol2->BorderStyle = System::Windows::Forms::BorderStyle::FixedSingle;
-			this->Pol2->Location = System::Drawing::Point(137, 265);
+			this->Pol2->Location = System::Drawing::Point(123, 177);
 			this->Pol2->Multiline = true;
 			this->Pol2->Name = L"Pol2";
 			this->Pol2->ScrollBars = System::Windows::Forms::ScrollBars::Both;
-			this->Pol2->Size = System::Drawing::Size(779, 68);
+			this->Pol2->Size = System::Drawing::Size(649, 54);
 			this->Pol2->TabIndex = 29;
 			this->Pol2->TextChanged += gcnew System::EventHandler(this, &MyForm::Pol2_TextChanged);
 			// 
@@ -239,9 +243,9 @@ namespace Project1Forms {
 			// 
 			this->Add1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Italic, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->Add1->Location = System::Drawing::Point(922, 145);
+			this->Add1->Location = System::Drawing::Point(772, 243);
 			this->Add1->Name = L"Add1";
-			this->Add1->Size = System::Drawing::Size(208, 39);
+			this->Add1->Size = System::Drawing::Size(143, 39);
 			this->Add1->TabIndex = 30;
 			this->Add1->Text = L"Add Monom";
 			this->Add1->UseVisualStyleBackColor = true;
@@ -250,11 +254,11 @@ namespace Project1Forms {
 			// textAdd1
 			// 
 			this->textAdd1->BorderStyle = System::Windows::Forms::BorderStyle::FixedSingle;
-			this->textAdd1->Location = System::Drawing::Point(922, 190);
+			this->textAdd1->Location = System::Drawing::Point(772, 286);
 			this->textAdd1->Multiline = true;
 			this->textAdd1->Name = L"textAdd1";
 			this->textAdd1->ScrollBars = System::Windows::Forms::ScrollBars::Both;
-			this->textAdd1->Size = System::Drawing::Size(230, 46);
+			this->textAdd1->Size = System::Drawing::Size(143, 46);
 			this->textAdd1->TabIndex = 31;
 			this->textAdd1->TextChanged += gcnew System::EventHandler(this, &MyForm::textAdd1_TextChanged);
 			// 
@@ -262,9 +266,9 @@ namespace Project1Forms {
 			// 
 			this->Del1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Italic, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->Del1->Location = System::Drawing::Point(1136, 145);
+			this->Del1->Location = System::Drawing::Point(921, 243);
 			this->Del1->Name = L"Del1";
-			this->Del1->Size = System::Drawing::Size(208, 39);
+			this->Del1->Size = System::Drawing::Size(144, 39);
 			this->Del1->TabIndex = 32;
 			this->Del1->Text = L"Del Monom";
 			this->Del1->UseVisualStyleBackColor = true;
@@ -273,11 +277,11 @@ namespace Project1Forms {
 			// textDel1
 			// 
 			this->textDel1->BorderStyle = System::Windows::Forms::BorderStyle::FixedSingle;
-			this->textDel1->Location = System::Drawing::Point(1136, 190);
+			this->textDel1->Location = System::Drawing::Point(921, 286);
 			this->textDel1->Multiline = true;
 			this->textDel1->Name = L"textDel1";
 			this->textDel1->ScrollBars = System::Windows::Forms::ScrollBars::Both;
-			this->textDel1->Size = System::Drawing::Size(230, 46);
+			this->textDel1->Size = System::Drawing::Size(144, 46);
 			this->textDel1->TabIndex = 33;
 			this->textDel1->TextChanged += gcnew System::EventHandler(this, &MyForm::textDel1_TextChanged);
 			// 
@@ -285,9 +289,9 @@ namespace Project1Forms {
 			// 
 			this->Add2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Italic, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->Add2->Location = System::Drawing::Point(922, 316);
+			this->Add2->Location = System::Drawing::Point(772, 338);
 			this->Add2->Name = L"Add2";
-			this->Add2->Size = System::Drawing::Size(208, 39);
+			this->Add2->Size = System::Drawing::Size(143, 39);
 			this->Add2->TabIndex = 34;
 			this->Add2->Text = L"Add Monom";
 			this->Add2->UseVisualStyleBackColor = true;
@@ -296,11 +300,11 @@ namespace Project1Forms {
 			// textAdd2
 			// 
 			this->textAdd2->BorderStyle = System::Windows::Forms::BorderStyle::FixedSingle;
-			this->textAdd2->Location = System::Drawing::Point(922, 361);
+			this->textAdd2->Location = System::Drawing::Point(772, 384);
 			this->textAdd2->Multiline = true;
 			this->textAdd2->Name = L"textAdd2";
 			this->textAdd2->ScrollBars = System::Windows::Forms::ScrollBars::Both;
-			this->textAdd2->Size = System::Drawing::Size(230, 46);
+			this->textAdd2->Size = System::Drawing::Size(143, 46);
 			this->textAdd2->TabIndex = 35;
 			this->textAdd2->TextChanged += gcnew System::EventHandler(this, &MyForm::textAdd2_TextChanged);
 			// 
@@ -308,9 +312,9 @@ namespace Project1Forms {
 			// 
 			this->Del2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Italic, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->Del2->Location = System::Drawing::Point(1136, 316);
+			this->Del2->Location = System::Drawing::Point(921, 339);
 			this->Del2->Name = L"Del2";
-			this->Del2->Size = System::Drawing::Size(208, 39);
+			this->Del2->Size = System::Drawing::Size(144, 39);
 			this->Del2->TabIndex = 36;
 			this->Del2->Text = L"Del Monom";
 			this->Del2->UseVisualStyleBackColor = true;
@@ -319,11 +323,11 @@ namespace Project1Forms {
 			// textDel2
 			// 
 			this->textDel2->BorderStyle = System::Windows::Forms::BorderStyle::FixedSingle;
-			this->textDel2->Location = System::Drawing::Point(1136, 361);
+			this->textDel2->Location = System::Drawing::Point(921, 384);
 			this->textDel2->Multiline = true;
 			this->textDel2->Name = L"textDel2";
 			this->textDel2->ScrollBars = System::Windows::Forms::ScrollBars::Both;
-			this->textDel2->Size = System::Drawing::Size(230, 46);
+			this->textDel2->Size = System::Drawing::Size(144, 46);
 			this->textDel2->TabIndex = 37;
 			this->textDel2->TextChanged += gcnew System::EventHandler(this, &MyForm::textDel2_TextChanged);
 			// 
@@ -331,9 +335,9 @@ namespace Project1Forms {
 			// 
 			this->BuildP1P2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Italic, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->BuildP1P2->Location = System::Drawing::Point(922, 12);
+			this->BuildP1P2->Location = System::Drawing::Point(772, 94);
 			this->BuildP1P2->Name = L"BuildP1P2";
-			this->BuildP1P2->Size = System::Drawing::Size(422, 89);
+			this->BuildP1P2->Size = System::Drawing::Size(293, 143);
 			this->BuildP1P2->TabIndex = 38;
 			this->BuildP1P2->Text = L"Build polinom1 and polinom2";
 			this->BuildP1P2->UseVisualStyleBackColor = true;
@@ -344,7 +348,7 @@ namespace Project1Forms {
 			this->label3->AutoSize = true;
 			this->label3->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Italic, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->label3->Location = System::Drawing::Point(12, 492);
+			this->label3->Location = System::Drawing::Point(-2, 492);
 			this->label3->Name = L"label3";
 			this->label3->Size = System::Drawing::Size(66, 25);
 			this->label3->TabIndex = 39;
@@ -353,12 +357,12 @@ namespace Project1Forms {
 			// Pol3
 			// 
 			this->Pol3->BorderStyle = System::Windows::Forms::BorderStyle::FixedSingle;
-			this->Pol3->Location = System::Drawing::Point(137, 492);
+			this->Pol3->Location = System::Drawing::Point(123, 492);
 			this->Pol3->Multiline = true;
 			this->Pol3->Name = L"Pol3";
 			this->Pol3->ReadOnly = true;
 			this->Pol3->ScrollBars = System::Windows::Forms::ScrollBars::Both;
-			this->Pol3->Size = System::Drawing::Size(1207, 75);
+			this->Pol3->Size = System::Drawing::Size(649, 75);
 			this->Pol3->TabIndex = 40;
 			this->Pol3->TextChanged += gcnew System::EventHandler(this, &MyForm::Pol3_TextChanged);
 			// 
@@ -367,7 +371,7 @@ namespace Project1Forms {
 			this->label6->AutoSize = true;
 			this->label6->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Italic, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->label6->Location = System::Drawing::Point(132, 443);
+			this->label6->Location = System::Drawing::Point(118, 443);
 			this->label6->Name = L"label6";
 			this->label6->Size = System::Drawing::Size(28, 25);
 			this->label6->TabIndex = 41;
@@ -376,7 +380,7 @@ namespace Project1Forms {
 			// K
 			// 
 			this->K->BorderStyle = System::Windows::Forms::BorderStyle::FixedSingle;
-			this->K->Location = System::Drawing::Point(181, 436);
+			this->K->Location = System::Drawing::Point(152, 436);
 			this->K->Multiline = true;
 			this->K->Name = L"K";
 			this->K->ScrollBars = System::Windows::Forms::ScrollBars::Both;
@@ -388,7 +392,7 @@ namespace Project1Forms {
 			// 
 			this->plus->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Italic, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->plus->Location = System::Drawing::Point(337, 443);
+			this->plus->Location = System::Drawing::Point(280, 443);
 			this->plus->Name = L"plus";
 			this->plus->Size = System::Drawing::Size(88, 39);
 			this->plus->TabIndex = 43;
@@ -400,7 +404,7 @@ namespace Project1Forms {
 			// 
 			this->min->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Italic, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->min->Location = System::Drawing::Point(449, 443);
+			this->min->Location = System::Drawing::Point(390, 443);
 			this->min->Name = L"min";
 			this->min->Size = System::Drawing::Size(88, 39);
 			this->min->TabIndex = 44;
@@ -412,7 +416,7 @@ namespace Project1Forms {
 			// 
 			this->mult->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Italic, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->mult->Location = System::Drawing::Point(562, 443);
+			this->mult->Location = System::Drawing::Point(497, 443);
 			this->mult->Name = L"mult";
 			this->mult->Size = System::Drawing::Size(88, 39);
 			this->mult->TabIndex = 45;
@@ -424,7 +428,7 @@ namespace Project1Forms {
 			// 
 			this->multK->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Italic, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->multK->Location = System::Drawing::Point(684, 443);
+			this->multK->Location = System::Drawing::Point(608, 443);
 			this->multK->Name = L"multK";
 			this->multK->Size = System::Drawing::Size(88, 39);
 			this->multK->TabIndex = 46;
@@ -436,7 +440,7 @@ namespace Project1Forms {
 			// 
 			this->exit->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Italic, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->exit->Location = System::Drawing::Point(1256, 573);
+			this->exit->Location = System::Drawing::Point(899, 515);
 			this->exit->Name = L"exit";
 			this->exit->Size = System::Drawing::Size(88, 39);
 			this->exit->TabIndex = 47;
@@ -448,7 +452,7 @@ namespace Project1Forms {
 			// 
 			this->Clear->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Italic, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->Clear->Location = System::Drawing::Point(1136, 573);
+			this->Clear->Location = System::Drawing::Point(778, 515);
 			this->Clear->Name = L"Clear";
 			this->Clear->Size = System::Drawing::Size(88, 39);
 			this->Clear->TabIndex = 48;
@@ -459,32 +463,56 @@ namespace Project1Forms {
 			// P1build
 			// 
 			this->P1build->BorderStyle = System::Windows::Forms::BorderStyle::FixedSingle;
-			this->P1build->Location = System::Drawing::Point(137, 168);
+			this->P1build->Location = System::Drawing::Point(123, 264);
 			this->P1build->Multiline = true;
 			this->P1build->Name = L"P1build";
 			this->P1build->ReadOnly = true;
 			this->P1build->ScrollBars = System::Windows::Forms::ScrollBars::Both;
-			this->P1build->Size = System::Drawing::Size(779, 68);
+			this->P1build->Size = System::Drawing::Size(649, 68);
 			this->P1build->TabIndex = 49;
 			this->P1build->TextChanged += gcnew System::EventHandler(this, &MyForm::P1build_TextChanged);
 			// 
 			// P2build
 			// 
 			this->P2build->BorderStyle = System::Windows::Forms::BorderStyle::FixedSingle;
-			this->P2build->Location = System::Drawing::Point(137, 339);
+			this->P2build->Location = System::Drawing::Point(123, 339);
 			this->P2build->Multiline = true;
 			this->P2build->Name = L"P2build";
 			this->P2build->ReadOnly = true;
 			this->P2build->ScrollBars = System::Windows::Forms::ScrollBars::Both;
-			this->P2build->Size = System::Drawing::Size(779, 68);
+			this->P2build->Size = System::Drawing::Size(649, 68);
 			this->P2build->TabIndex = 50;
 			this->P2build->TextChanged += gcnew System::EventHandler(this, &MyForm::P2build_TextChanged);
+			// 
+			// label7
+			// 
+			this->label7->AutoSize = true;
+			this->label7->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Italic, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
+			this->label7->Location = System::Drawing::Point(-2, 264);
+			this->label7->Name = L"label7";
+			this->label7->Size = System::Drawing::Size(93, 25);
+			this->label7->TabIndex = 51;
+			this->label7->Text = L"Polinom1";
+			// 
+			// label8
+			// 
+			this->label8->AutoSize = true;
+			this->label8->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Italic, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
+			this->label8->Location = System::Drawing::Point(-2, 339);
+			this->label8->Name = L"label8";
+			this->label8->Size = System::Drawing::Size(93, 25);
+			this->label8->TabIndex = 52;
+			this->label8->Text = L"Polinom2";
 			// 
 			// MyForm
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(1381, 624);
+			this->ClientSize = System::Drawing::Size(1078, 587);
+			this->Controls->Add(this->label8);
+			this->Controls->Add(this->label7);
 			this->Controls->Add(this->P2build);
 			this->Controls->Add(this->P1build);
 			this->Controls->Add(this->Clear);
@@ -535,7 +563,6 @@ namespace Project1Forms {
 		Max_degree->ReadOnly = true;
 		Count->ReadOnly = true;
 	}
-	
 	private: System::Void Add1_Click(System::Object^ sender, System::EventArgs^ e) {
 		std::string str = msclr::interop::marshal_as<std::string>(textAdd1->Text);
 		Monom tmp(str, max_d, n);
@@ -572,7 +599,6 @@ namespace Project1Forms {
 		String^ Pres = gcnew System::String(st.c_str());
 		P2build->Text = Pres;
 	}
-	
 	private: System::Void BuildP1P2_Click(System::Object^ sender, System::EventArgs^ e) {
 		std::string str1 = msclr::interop::marshal_as<std::string>(Pol1->Text);
 		std::string str2 = msclr::interop::marshal_as<std::string>(Pol2->Text);

@@ -1,4 +1,13 @@
-﻿  MyForm.cpp
-C:\Users\Nastya\source\repos\Project1Forms\Project1Forms\MyForm.cpp(6,33): warning C4829: Возможно, неправильные параметры функции main. Рекомендуемый вариант - "int main(Platform::Array<Platform::String^>^ argv)"
+﻿  ListCircle.cpp
+  Monom.cpp
+D:\Desktop\ВУЗ\ОП\2 курс\Полиномы\Project1Forms\Project1Forms\Monom.cpp(18,18): warning C4018: >=: несоответствие типов со знаком и без знака
+D:\Desktop\ВУЗ\ОП\2 курс\Полиномы\Project1Forms\Project1Forms\Monom.cpp(21,17): warning C4018: <=: несоответствие типов со знаком и без знака
+D:\Desktop\ВУЗ\ОП\2 курс\Полиномы\Project1Forms\Project1Forms\Monom.cpp(24,22): warning C4018: >=: несоответствие типов со знаком и без знака
+  MyForm.cpp
+D:\Desktop\ВУЗ\ОП\2 курс\Полиномы\Project1Forms\Project1Forms\MyForm.cpp(6,33): warning C4829: Возможно, неправильные параметры функции main. Рекомендуемый вариант - "int main(Platform::Array<Platform::String^>^ argv)"
+  Polinom.cpp
+D:\Desktop\ВУЗ\ОП\2 курс\Полиномы\Project1Forms\Project1Forms\Polinom.cpp(6,20): warning C4018: <: несоответствие типов со знаком и без знака
+D:\Desktop\ВУЗ\ОП\2 курс\Полиномы\Project1Forms\Project1Forms\Polinom.cpp(29,20): warning C4018: <: несоответствие типов со знаком и без знака
+  Создание кода...
   ListCircle.obj : обнаружен модуль MSIL; для MSIL последовательная компоновка отключена; выполняется полная компоновка
-  Project1Forms.vcxproj -> C:\Users\Nastya\source\repos\Project1Forms\Debug\Project1Forms.exe
+  Project1Forms.vcxproj -> D:\Desktop\ВУЗ\ОП\2 курс\Полиномы\Project1Forms\Debug\Project1Forms.exe

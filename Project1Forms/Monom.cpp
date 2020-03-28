@@ -5,8 +5,7 @@
 
 int Monom::convolution_calculate(std::string s, int max_degree, int n) { //вычисление свертки 
 	convolution = 0;
-	int* pow;
-	pow = new int[n];//степени
+	int* pow = new int[n];//степени
 	std::string var = "x";
 	std::string pv = "";
 	int pos;
@@ -100,10 +99,8 @@ Monom& Monom::operator=(const Monom& tmp) {
 }
 
 Monom Monom::Multipl(Monom tmp, int max_degree, int n) {
-	int* pow_first;
-	pow_first = new int[n];
-	int* pow_second;
-	pow_second = new int[n];
+	int* pow_first = new int[n];
+	int* pow_second = new int[n];
 	Monom res;
 	res.convolution = 0;
 	(*this).get_pow(n, max_degree, pow_first);
@@ -123,6 +120,7 @@ Monom Monom::Multipl(Monom tmp, int max_degree, int n) {
 }
 
 std::string Monom::calculate(int max_degree, int n) {
+	if (convolution == -1) { return "+EXCESS OF DEGREE"; }
 	std::string ans;
 	if (coeff > 0) ans += '+';
 	if (coeff != 1) ans += std::to_string(coeff);
@@ -146,8 +144,7 @@ int Monom::get_convolution() {
 	return this->convolution;
 }
 
-Monom* Monom::get_next()
-{
+Monom* Monom::get_next(){
 	return next;
 }
 

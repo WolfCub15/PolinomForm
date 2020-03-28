@@ -1,3 +1,6 @@
 C:\Users\Nastya\source\repos\Project1Forms\Project1Forms\Debug\Project1Forms.vcxprojAssemblyReference.cache
 C:\Users\Nastya\source\repos\Project1Forms\Project1Forms\Debug\Project1Forms.MyForm.resources
 C:\Users\Nastya\source\repos\Project1Forms\Project1Forms\Debug\Project1Forms.vcxproj.GenerateResource.cache
+D:\Desktop\ВУЗ\ОП\2 курс\Полиномы\Project1Forms\Project1Forms\Debug\Project1Forms.vcxprojAssemblyReference.cache
+D:\Desktop\ВУЗ\ОП\2 курс\Полиномы\Project1Forms\Project1Forms\Debug\Project1Forms.MyForm.resources
+D:\Desktop\ВУЗ\ОП\2 курс\Полиномы\Project1Forms\Project1Forms\Debug\Project1Forms.vcxproj.GenerateResource.cache
